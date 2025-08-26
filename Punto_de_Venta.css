@@ -26,7 +26,26 @@ h4 {
     margin-bottom: 15px;
 	border-radius: 10px;
 }
-
+.form-group label {
+	position: absolute;
+	left: 10px;
+	background-color: white;
+	top: 10px;
+	transition: 0.3s ease;
+	color: #888;
+}
+.form-group input:focus + label {
+	transform: translateY(-50%) scale(0.85);
+	top:-0px;
+	background-color: #fff;
+	color: #007BFF;
+}
+input:not(:placeholder-shown) + label {
+	transform: translateY(-50%) scale(0.85);
+	top: 0px;
+	left: 5px;
+	background-color: #fff;
+}
 .table {
     margin-top: 20px;
 }
@@ -133,4 +152,5 @@ h4 {
     h4 {
         font-size: 1.5rem;
     }
+
 }
