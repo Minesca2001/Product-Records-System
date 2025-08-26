@@ -41,35 +41,32 @@
               <h3>Gestión de Productos</h3>
               <form id="productForm">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="productName" required placeholder=" ">
+                  <input type="text" class="form-control" id="productName" placeholder=" " required>
                   <label for="productName">Nombre del Producto</label>
                 </div>
                 <div class="form-group">
+                  <input type="text" class="form-control" id="productCategory" placeholder=" " required>
                   <label for="productCategory">Categoría</label>
-                  <input type="text" class="form-control" id="productCategory" placeholder="Introduce la categoría">
                 </div>
                 <div class="form-group">
+                  <input type="number" class="form-control" id="productStock" placeholder=" " required>
                   <label for="productCount">Cantidad</label>
-                  <input type="number" class="form-control" id="productStock" placeholder="Introduce la cantidad"
-                    required>
                 </div>
                 <div class="form-group">
+                  <input type="number" class="form-control" id="productPrice" placeholder=" " required>
                   <label for="productPrice">Precio</label>
-                  <input type="number" class="form-control" id="productPrice" placeholder="Introduce el precio"
-                    required>
                 </div>
                 <div class="form-group">
+                  <input type="number" class="form-control" id="productDiscount" placeholder=" ">
                   <label for="productDiscount">Descuento</label>
-                  <input type="number" class="form-control" id="productDiscount" placeholder="Introduce el descuento">
                 </div>
                 <div class="form-group">
+                  <input type="text" class="form-control" id="productBarcode" placeholder=" " required>
                   <label for="productBarcode">Código de Barras</label>
-                  <input type="text" class="form-control" id="productBarcode"
-                    placeholder="Introduce el código de barras">
                 </div>
                 <div class="form-group">
-                  <label for="productImage">Foto del Producto</label>
                   <input type="file" class="form-control-file" id="productImage">
+                  <label for="productImage">Foto del Producto</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrar Producto</button>
                 <button type="submit" id="saveButton" class="btn btn-primary">Guardar</button>
@@ -153,21 +150,19 @@
               <h3>Gestión de Usuarios</h3>
               <form id="userForm">
                 <div class="form-group">
+                  <input type="text" class="form-control" id="username" placeholder=" " required>
                   <label for="username">Nombre de Usuario</label>
-                  <input type="text" class="form-control" id="username" placeholder="Introduce el nombre de usuario"
-                    required>
                 </div>
                 <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder=" " required>
                   <label for="password">Contraseña</label>
-                  <input type="password" class="form-control" id="password" placeholder="Introduce la contraseña"
-                    required>
                 </div>
                 <div class="form-group">
-                  <label for="role">Rol</label>
                   <select class="form-control" id="role">
                     <option value="admin">Administrador</option>
                     <option value="cashier">Cajero</option>
                   </select>
+                  <label for="role">Rol</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrar Usuario</button>
               </form>
@@ -504,4 +499,5 @@ renderInventory();
 </body>
 
 </html>
+
 
