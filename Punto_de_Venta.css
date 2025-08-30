@@ -30,7 +30,7 @@ h4 {
 	left: 10px;
 	background-color: white;
 	top: 10px;
-	transition: 0.8s ease;
+	transition: 0.3s ease;
 	color: #888;
 }
 .form-group input:focus + label {
@@ -153,4 +153,5 @@ input:not(:placeholder-shown) + label {
     }
 
 }
+
 
